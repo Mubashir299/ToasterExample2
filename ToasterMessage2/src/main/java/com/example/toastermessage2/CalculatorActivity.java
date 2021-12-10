@@ -4,11 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class CalculatorActivity extends AppCompatActivity {
     private EditText mEditText1;
     private EditText mEditText2;
     private TextView mTextViewResult;
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         int sum = num1 + num2;
 
         mTextViewResult.setText(String.valueOf(sum));
-        ToasterMessage2.display(MainActivity.this, sum);
+        ToasterMessage2.display(CalculatorActivity.this, sum);
         finish();
     }
 }

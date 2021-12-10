@@ -11,7 +11,7 @@ public class ToasterMessage2 {
     }
 
     public static void calculator(Context c) {
-        c.startActivity(new Intent(c, MainActivity.class));
+        c.startActivity(new Intent(c, CalculatorActivity.class));
 
     }
 
