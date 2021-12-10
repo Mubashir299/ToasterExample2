@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:padding="10dp"
+        android:layout_margin="20dp"
         android:layout_marginTop="20dp"/>
 
     <EditText
@@ -19,6 +21,8 @@
         android:id="@+id/edittext_number_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
         android:layout_below="@+id/edittext_number_1"
         android:layout_alignParentStart="true"
         android:inputType="number" />
