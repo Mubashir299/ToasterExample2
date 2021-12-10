@@ -22,7 +22,7 @@ public class CalculatorActivity extends AppCompatActivity {
         mEditText2 = findViewById(R.id.edittext_number_2);
        // mTextViewResult = findViewById(R.id.textview_result);
 
-        Button mButtonAdd = findViewById(R.id.button_add);
+        Button mButtonAdd = findViewById(R.id.button);
 
 
 
