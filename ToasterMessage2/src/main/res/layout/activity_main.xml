@@ -32,7 +32,7 @@
         android:textColor="@android:color/black"
         android:textSize="50sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
