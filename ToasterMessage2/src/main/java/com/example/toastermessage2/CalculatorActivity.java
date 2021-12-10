@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -20,30 +21,33 @@ public class CalculatorActivity extends AppCompatActivity {
         mEditText1 = findViewById(R.id.edittext_number_1);
         mEditText2 = findViewById(R.id.edittext_number_2);
         mTextViewResult = findViewById(R.id.textview_result);
-/*
+
         Button mButtonAdd = findViewById(R.id.button_add);
 
 
-*/
-
-        if (mEditText1.getText().toString().length() == 0) {
-            mEditText1.setText("0");
-        }
-
-        if (mEditText2.getText().toString().length() == 0) {
-            mEditText2.setText("0");
-        }
 
 
-        int num1 = Integer.parseInt(mEditText1.getText().toString());
-        int num2 = Integer.parseInt(mEditText2.getText().toString());
+        mButtonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mEditText1.getText().toString().length() == 0) {
+                    mEditText1.setText("0");
+                }
 
-        int sum = num1 + num2;
+                if (mEditText2.getText().toString().length() == 0) {
+                    mEditText2.setText("0");
+                }
 
-        mTextViewResult.setText(String.valueOf(sum));
-        ToasterMessage2.display(CalculatorActivity.this, sum);
-        finish();
 
+                int num1 = Integer.parseInt(mEditText1.getText().toString());
+                int num2 = Integer.parseInt(mEditText2.getText().toString());
+
+                int sum = num1 + num2;
+
+                mTextViewResult.setText(String.valueOf(sum));
+            }
+        });
+    }
 /*
         mButtonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,4 +95,3 @@ public class CalculatorActivity extends AppCompatActivity {
         ToasterMessage2.display(CalculatorActivity.this, sum);
         finish();
     }*/
-}
