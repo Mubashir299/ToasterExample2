@@ -18,7 +18,7 @@ public class CalculatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
         mEditText1 = findViewById(R.id.edittext_number_1);
         mEditText2 = findViewById(R.id.edittext_number_2);
        // mTextViewResult = findViewById(R.id.textview_result);
