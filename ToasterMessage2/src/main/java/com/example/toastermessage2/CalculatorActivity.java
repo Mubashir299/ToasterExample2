@@ -20,7 +20,7 @@ public class CalculatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mEditText1 = findViewById(R.id.edittext_number_1);
         mEditText2 = findViewById(R.id.edittext_number_2);
-        mTextViewResult = findViewById(R.id.textview_result);
+       // mTextViewResult = findViewById(R.id.textview_result);
 
         Button mButtonAdd = findViewById(R.id.button_add);
 
@@ -43,55 +43,15 @@ public class CalculatorActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(mEditText2.getText().toString());
 
                 int sum = num1 + num2;
-
-                mTextViewResult.setText(String.valueOf(sum));
-            }
-        });
-    }
-/*
-        mButtonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mEditText1.getText().toString().length() == 0) {
-                    mEditText1.setText("0");
-                }
-
-                if (mEditText2.getText().toString().length() == 0) {
-                    mEditText2.setText("0");
-                }
-
-
-                int num1 = Integer.parseInt(mEditText1.getText().toString());
-                int num2 = Integer.parseInt(mEditText2.getText().toString());
-
-                int sum = num1 + num2;
-
-                mTextViewResult.setText(String.valueOf(sum));
-                ToasterMessage2.display(MainActivity.this, sum);
+                ToasterMessage2.display(CalculatorActivity.this, sum);
                 finish();
+                //mTextViewResult.setText(String.valueOf(sum));
             }
         });
-*/
+    }
+
 
 
     }
 
-  /*  public void Cal(View view) {
-        if (mEditText1.getText().toString().length() == 0) {
-            mEditText1.setText("0");
-        }
 
-        if (mEditText2.getText().toString().length() == 0) {
-            mEditText2.setText("0");
-        }
-
-
-        int num1 = Integer.parseInt(mEditText1.getText().toString());
-        int num2 = Integer.parseInt(mEditText2.getText().toString());
-
-        int sum = num1 + num2;
-
-        mTextViewResult.setText(String.valueOf(sum));
-        ToasterMessage2.display(CalculatorActivity.this, sum);
-        finish();
-    }*/
