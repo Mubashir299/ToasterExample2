@@ -10,9 +10,11 @@
         android:id="@+id/edittext_number_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:inputType="number"
+        android:layout_marginTop="20dp"/>
 
     <EditText
+        android:layout_marginTop="20dp"
         android:background="#D6D4D4"
         android:id="@+id/edittext_number_2"
         android:layout_width="match_parent"

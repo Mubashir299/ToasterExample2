@@ -22,7 +22,27 @@ public class CalculatorActivity extends AppCompatActivity {
         mTextViewResult = findViewById(R.id.textview_result);
 /*
         Button mButtonAdd = findViewById(R.id.button_add);
+
+
 */
+
+        if (mEditText1.getText().toString().length() == 0) {
+            mEditText1.setText("0");
+        }
+
+        if (mEditText2.getText().toString().length() == 0) {
+            mEditText2.setText("0");
+        }
+
+
+        int num1 = Integer.parseInt(mEditText1.getText().toString());
+        int num2 = Integer.parseInt(mEditText2.getText().toString());
+
+        int sum = num1 + num2;
+
+        mTextViewResult.setText(String.valueOf(sum));
+        ToasterMessage2.display(CalculatorActivity.this, sum);
+        finish();
 
 /*
         mButtonAdd.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +72,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
     }
 
-    public void Cal(View view) {
+  /*  public void Cal(View view) {
         if (mEditText1.getText().toString().length() == 0) {
             mEditText1.setText("0");
         }
@@ -70,5 +90,5 @@ public class CalculatorActivity extends AppCompatActivity {
         mTextViewResult.setText(String.valueOf(sum));
         ToasterMessage2.display(CalculatorActivity.this, sum);
         finish();
-    }
+    }*/
 }
