@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mEditText1;
     private EditText mEditText2;
     private TextView mTextViewResult;
-    private Button mButtonAdd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mEditText1 = findViewById(R.id.edittext_number_1);
         mEditText2 = findViewById(R.id.edittext_number_2);
         mTextViewResult = findViewById(R.id.textview_result);
-        mButtonAdd = findViewById(R.id.button_add);
+        Button mButtonAdd = findViewById(R.id.button_add);
 
         mButtonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
